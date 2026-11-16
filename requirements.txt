@@ -1,0 +1,8 @@
+streamlit
+pandas
+openpyxl
+requests
+bcchapi
+holidays
+plotly
+Pillow
