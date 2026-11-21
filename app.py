@@ -3,6 +3,7 @@ import streamlit as st
 from Calculadora_Admisibilidad.app_admisibilidad import mostrar_calculadora
 from Calculadora_Plazos_Entrega.app_plazos_entrega import mostrar_calculadora_plazos
 from Evaluacion_Ofertas.app_evaluacion import mostrar_evaluacion_ofertas
+from Inteligencia_Economica.app_inteligencia_economica import mostrar_analisis_economico
 
 st.set_page_config(
     page_title="Herramientas de Compras | Enterprise",
@@ -57,7 +58,8 @@ with st.sidebar:
         "HERRAMIENTAS DISPONIBLES",
         [
             "Evaluación de Ofertas",
-            "Calculadora de Plazos de Entrega"
+            "Calculadora de Plazos de Entrega",
+            "Inteligencia Económica"
         ]
     )
 
@@ -96,3 +98,7 @@ if herramienta == "Evaluación de Ofertas":
     
 elif herramienta == "Calculadora de Plazos de Entrega":
     mostrar_calculadora_plazos()
+
+
+elif herramienta == "Inteligencia Económica":
+    mostrar_analisis_economico()
